@@ -13,7 +13,7 @@ const CartProvider = ({ children }) => {
     // 
     useEffect(() => {
         const total = cart.reduce((acc, curr) => {
-            return acc + curr.price * curr.amount;
+            return acc + curr.price * curr.amount; 
         }, 0)
         setTotal(total.toFixed(2));
     })
